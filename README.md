@@ -73,7 +73,7 @@ Para poder utilizar estos packetes debemos reemplazar los archivos dentro de su 
  
  Dependencia [GO](https://go.dev/dl/)
  
- ### 📘 [mupdf](https://wiki.archlinux.org/title/MuPDF)(Lector PDF)
+ ### 📘 [mupdf](https://wiki.archlinux.org/title/MuPDF)(lector PDF)
  
  `sudo pacman -Syu mupdf`
  
