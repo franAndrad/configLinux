@@ -23,8 +23,13 @@
 ## 🔧 Configuracion
 
 Para poder utilizar estos packetes debemos reemplazar los archivos dentro de su directorio home:
+
   `$ cd /home/$USER/`
+  
   `$ git clone https://github.com/franAndrad/configLinux.git`
+  
   `$ cp -r configLinux/* /home/$USER/`
+  
   `$ sudo cp -r configLinux/etc/* /etc/`
+  
   `$ rm -r configLinux/etc`
