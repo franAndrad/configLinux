@@ -23,7 +23,7 @@
 
 `$ sudo pacman -Syu feh`
 
-## 📥 Instalacion
+## 📥 Instalacion configuracion
 
 Para poder utilizar estos packetes debemos reemplazar los archivos dentro de su directorio home:
 
@@ -60,3 +60,29 @@ Para poder utilizar estos packetes debemos reemplazar los archivos dentro de su 
   Para verificar su conexion
   
   `nmcli connection show`
+ 
+ ## 📥 Otros programas
+ 
+ ### 📘 [ranger](https://wiki.archlinux.org/title/Ranger_(Espa%C3%B1ol))
+ 
+ `sudo pacman -Syu ranger`
+ 
+ ### 📘 [lf](https://github.com/gokcehan/lf)
+ 
+ `sudo pacman -Syu ranger` 
+ 
+ Dependencia [GO](https://go.dev/dl/)
+ 
+ ### 📘 [mupdf](https://wiki.archlinux.org/title/MuPDF)(Lector PDF)
+ 
+ `sudo pacman -Syu mupdf`
+ 
+ ### 📘 [vlc](https://wiki.archlinux.org/title/VLC_media_player_(Espa%C3%B1ol))
+ 
+ `sudo pacman -Syu vlc`
+
+ ### [libreoffice](https://wiki.archlinux.org/title/LibreOffice_(Espa%C3%B1ol)#Instalaci%C3%B3n)
+ 
+ 
+ 
+ 
