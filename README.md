@@ -1,4 +1,5 @@
 # Mis configuraciones ArchLinux
+<p align="center"> <img src="./archlinux-logo-dark-1200dpi.b42bd35d5916.png" alt="logo-burgerhouse" height="200"/> </p>
 
 ## 💿 Dependencias
 
