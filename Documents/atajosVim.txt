@@ -1,0 +1,27 @@
+COPIAR  :cp [linea-donde] | tecla nyy donde n es la cantidad de linea a copiar
+ELIMINAR :d
+DESHACER :undo   | tecla u
+REHACER :redo    | tecla cntrl + r
+SALIR :q
+GUARDAR :w 
+COMPROBAR SYNTAXIS PYTON :SyntasticCheck
+
+Atajos teclado
+gg -> Moverse al inicio del documento
+dd -> Borrar la linea actual
+0 -> Ir al principio de la linea
+$ -> Ir al final de la linea
+yy -> Copiar
+p -> Pegar
+u -> deshacer
+cntrl + r -> rehacer
+/nombre -> Buscar
+
+COMENTAR Y DECOMENTAR
+
+Modo ventana -> cntrl + v
+
+COMENT: seleccionamos las lineas a comentar e insetamos en la primer fila con cntrl + i despues ingresamos lo que queremos y apretamos escape 
+
+DISCOMENT: seleccionamos las lineas a descomentar y aprentamos la x
+

@@ -1,0 +1,100 @@
+----------------------------------
+COMANDO UTILES PARA LA TERMINAR
+----------------------------------
+
+
+PROGRAMAS
+----------------------------------
+Abrir imagenes ->	film [img.ext]
+Abrir pdf -> evince [name.pdf]
+Abrir explorador de archivos -> ranger
+Abrir vscode -> code
+Abrir pycharm -> pycharm
+Abrir vista memoria RAM -> htop
+Abrir vista del sistema -> bpytop
+Abrir info SO -> neofecth
+Particiones del disk -> fdisk -l
+Uso de almacenamiento de particiones -> sudo lsblk -fm
+Uso de almacenamiento en raiz -> df -h
+Mostrar baner en ASCII -> figlet [lo que queremos mostrar]
+Copiar archivos pesados -> $sudo rsync -avP [archivo] [destino]
+Protocolo de red ->sudo fern
+
+EXTRAS
+---------------------
+
+EJECUCION BINARIOS: Para poder ejecutar binarios sin acceder al directorio donde se encuentran se debe copiar el binario de forma $ cp [name.bin] [/usr/bin/name.bin]
+
+ TAIL: Para mostrar los ultimos n parrafos podemos usar $cat [name.txt] | tail -n[nuM]
+
+ UNIQ: Para mostrar parrafos duplicados usamos $cat [name.txt] | uniq -d ,en caso de querer mostrar los no dublicados cambiamos el '-d' por '-u'
+
+
+INSTALACIONES
+---------------------
+
+Para poder instalar aplicaciones se tiene que hacer el comando $ sudo pacman -Syu [nameApp]
+ Para listar los paquetes instalados usamos $ pacman -Qe 
+ Para listar los paquetes instalados en orden por tamaño e instalados usamos $LC_ALL=C pacman -Qi | awk '/^Name/{name=$3} /^Installed Size/{print $4$5, name}' | sort -h
+
+
+ CONFIGURACIONES
+----------------------
+
+Para modificar el tema y las opciones de terminales de i3 entramos con  $vim /home/killzombymen/.config/i3/config
+Para modificar la transparencia de picom se hace en $sudo vim /etc/xdg/picom.conf.
+Para encontrar la clase de un programa usamos $xprop WM_CLASS
+Para cambiar el fondo lo hacemos desde la config de i3 esta al final $feh --bg-fill /home/gerry/fondo.png
+Para modificar el inicio de sesion lo hacemos dede $sudo vim /etc/ly/config.ini
+Para ver los controladores usamos el comando $sudo lspci -nn
+
+
+REDES
+---------------------------
+Para ver las rederes disponibles usamos $ifconfig
+Para listar las interfezas de red disponinles usamos $ls /sys/class/net/
+Para asignar una activar o desactivar una interfaz de red usamos $sudo ip link interfaz up|down ; tambien lo podemos hacer con el $sudo ifconfig interfaz up | down
+Para poner una direccion ip temporal ponemos $ifconfig interfaz 192.168.0.11 netmask 255.255.255.0, pero al reicionar desaparece
+Para agregar una direccion ip por defecto lo hacemos con $sudo route add default gw 192.168.30.1 interfaz
+Para ver las rutas de las interfazes utilizamos $route
+Para conectarnos a una red usamos $sudo iwctl --passphrase [clave] station [interfaz] connect [nameWifi]
+Para desconectarse de una red usamos $sudo iwctl station [interfaz] disconnect
+
+Nota: Para usar el iwctl donde dice app reemplazalo por station
+
+
+USB
+----------------------------
+
+Para montar un USB primero debemos idententificar el nombre del archivo ubicado en /dev para ello usamos $sudo fdisk -l 6 tambien podemos usar $lsblk -f para ver el nombre 
+Con el nombre hacemos $sudo mount /dev/[nombre] /mnt
+
+IDIOMA DE TECLADO
+------------------------------------
+
+Para poder ver los idiomas de teclado instalados usamos $localectl list-keymap una vez encontrado el que queremos lo ponemos en vim /etc/locale.gen y descomentamos la opcion de es.AR-UTF-8
+
+Luego ingresamos a $sudo vim /etc/vconsole.conf aqui ingresamos en 
+
+	KEYMAP=la-latin
+
+Por ultimo en $sudo vim /etc/X11/xorg.conf.d/00-keyboard.conf modificamos "es" por "latam"
+
+
+HDMI
+-------------------------------------------
+Para ello instalamos sudo pacman Syu pulseaudio-alsa pulseaudio-jack pulseaudio-equalizer
+
+
+
+
+
+
+
+
+
+
+
+WINDOWS
+------------------------------------------------------
+Ver uso de la memoria -> $ntop 
