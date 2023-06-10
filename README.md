@@ -1,4 +1,4 @@
-# 💿 Instalaciones nescesarias
+# 💿 Dependencias
 
 ## 📂 Gestor de paquete [yay](https://github.com/Jguer/yay)
 
@@ -20,7 +20,7 @@
 
 `$ sudo pacman -Syu feh`
 
-## 🔧 Configuracion
+# 🔧 Instalacion
 
 Para poder utilizar estos packetes debemos reemplazar los archivos dentro de su directorio home:
 
