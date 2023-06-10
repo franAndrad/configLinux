@@ -23,7 +23,7 @@
 
 `$ sudo pacman -Syu feh`
 
-## 🔧 Instalacion
+## 📥 Instalacion
 
 Para poder utilizar estos packetes debemos reemplazar los archivos dentro de su directorio home:
 
@@ -36,3 +36,27 @@ Para poder utilizar estos packetes debemos reemplazar los archivos dentro de su 
   `$ sudo cp -r configLinux/etc/* /etc/`
   
   `$ rm -r configLinux/etc`
+
+## 🔧 Otras Configuraciones
+
+### 📶 Wifi
+  
+  Instalamos networkmanager
+  
+  `$ sudo pacman -Syu networkmanager`
+  
+  Mostrar lista de puntos de acceso
+  
+  `$ nmcli device wifi list`
+  
+  Si no muestra su SSID
+  
+  `$ nmcli device wifi rescan`
+  
+  Para conectarnos a la red wifi utilizamos 
+  
+  `nmcli device wifi connect *access_point_name* password *your_password*`
+  
+  Para verificar su conexion
+  
+  `nmcli connection show`
