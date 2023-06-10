@@ -41,7 +41,7 @@ Para poder utilizar estos packetes debemos reemplazar los archivos dentro de su 
 
 ### 📶 Wifi
   
-  Instalamos networkmanager
+  Instalamos [networkmanager](https://networkmanager.dev/)
   
   `$ sudo pacman -Syu networkmanager`
   
