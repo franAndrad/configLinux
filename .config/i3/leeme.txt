@@ -1,0 +1,3 @@
+INSTALAR FONT-AWESOME
+
+$ sudo pacman -Syu ttf-font-awesome 
