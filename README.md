@@ -81,7 +81,7 @@ Para poder utilizar estos packetes debemos reemplazar los archivos dentro de su 
  
  `sudo pacman -Syu vlc`
 
- ### [libreoffice](https://wiki.archlinux.org/title/LibreOffice_(Espa%C3%B1ol)#Instalaci%C3%B3n)
+ ### 📘 [libreoffice](https://wiki.archlinux.org/title/LibreOffice_(Espa%C3%B1ol)#Instalaci%C3%B3n)
  
  
  
