@@ -1,73 +1,75 @@
 # Simple terminal (st) de gerardet46
 
-Aquesta és la meva versió configurada de [simple terminal](https://st.suckless.org/), de suckless. Està inspirat en la configuració de 
-[luke smith](https://github.com/lukesmithxyz/st) però s'ha creat a partir de la versió 0.8.4 oficial a suckless.org, afegint els pedaços que trobava necessaris.
+Esta es mi versión configurada de [simple terminal](https://st.suckless.org/), de suckless. Está inspirado en la configuración de [luke
+smith](https://github.com/lukesmithxyz/st) pero se ha creado a partir de la versión 0.8.4 oficial a suckless.org, añadiendo los parches que encontraba necesarios.
 
-[ README en español ](README_es.md)
+[ README en català ](README.md)
 
-## Taula de continguts
-1. [ Filosofia ](#filo)
-2. Característiques
+## Tabla de contenidos
+1. [ Filosofía ](#filo)
+2. Características
 
-      2.1. [ Característiques de Luke Smith ](#luke)
-  
-      2.2. [ Dreceres de teclat ](#tecles)
-  
-      2.3. [ Pedaços i temes ](#draps)
-  
-3. [ Nota pels emoji ](#emoji)
-4. [ Instal·lació i configuració ](#make)
+2.1. [ Características de Luke Smith ](#luke)
+
+2.2. [ Atajos de teclado ](#tecles)
+
+2.3. [ Parches y temas ](#draps)
+
+3. [ Nota por los emoji ](#emoji)
+4. [ Instalación y configuración ](#make)
 
 <a name="filo"></a>
-## Filosofia
-Seguint un poc la filosofia de _suckless_, aquesta versió de `st` no permetrà que es pugui canviar la configuració amb fitxers clàssics de configuració. Per canviar-la,
-s'haurà de canviar el propi codi font, que ho fa més segur i ràpid.
+## Filosofía
+Siguiendo un poco la filosofía de _suckless_, esta versión de `st` no permitirá que se pueda cambiar la configuración con ficheros clásicos de configuración. Para cambiarla,
+se tendrá que cambiar y compilar el propio código fuente, que lo hace más seguro y rápido.
 
-Per això, si voleu instal·lar un altre tema, simplement editau els colors al fitxer `config.h`, que és el fitxer on es configura el terminal i llavors es compila.
+Por eso, si queréis instalar otro tema, por ejemplo, simplemente editáis los colores en el fichero `config.h`, que es el fichero donde se configura el terminal y compiláis para
+hacer realidad los cambios.
 
-També es pot canviar el fitxer `~/.Xresources` emprant la classe `St` (veure `config.h`) per canviar l'estètica del terminal.
+También se puede cambiar el archivo `~/.Xresources`, usando la clase `St` (ver `config.h`) para cambiar la estética del terminal
 
 <a name="luke"></a>
-## Característiques de luke smith
-- **Seguir enllaços** pressionant `alt-l`
-- **Copiar enllaços** pressionant `alt-y`
-- **Copiar sortida de les ordres** amb `alt-o`
-- **Editar text del terminal** amb `alt-e`
+## Características de luke smith
+- **Seguir enlaces** presionando `alt-l`
+- **Copiar enlaces** presionando `alt-y`
+- **Copiar salida de las órdenes** con `alt-o`
+- **Editar texto del terminal en el editor** con `alt-e`
 
 <a name="tecles"></a>
-## Dreceres de teclat afegides
-Es podem canviar a `config.h`
-- Desplaçament _ràpid_ amb `shift-Re/Av pàg`
-- Desplaçament _gradual_ amb `alt-↑/↓`
-- Zoom (fer més gran la font): `ctrl-+/-`
-- s'ha afegit el bon funcionament de la tecla `Supr`, adaptat ara pels teclats `es` com el meu
+## Atajos de teclado añadidas
+Se pueden cambiar en `config.h`
+- Desplazamiento _rápido_ con `shift-Re/*Av pàg`
+- Desplazamiento _gradual_ con `alt-↑/↓`
+- Zoom (hacer más grande la fuente): `ctrl-+/-`
+- se ha añadido el buen funcionamiento de la tecla `Supr`, adaptado ahora por los teclados `es` como en mi caso.
 
 <a name="draps"></a>
-## Pedaços i temes
-Tots els pedaços es poden veure en l'arrel del respositori com a fitxers `.diff`
-- `xresources` per configurar l'estètica amb `~/.Xresources`
-- `alpha` per transparència
-- `font2` per als emojis
-- `blinking cursor` per cursor típic parpellejant
-- `externalpipe` per emprar `dmenu` adins `st`
-- `scrollback` per desplaçament vertical
-- `newterm` per obrir un terminal en el mateix directori amb `C-S-Enter`
-- Utilitza la font **Ubuntu Mono** per defecte
+## Parches y temas
+Todos los parches se pueden ver en la raíz del respositori como ficheros `.diff`
+- `xresources` para configurar la estética `~/.Xresources`
+- `alpha` por transparencia
+- `font2` para los emojis
+- `blinking cursor` por cursor típico parpadejant
+- `externalpipe` para emplear `dmenu` dentro de `st`
+- `scrollback` por desplazamiento vertical
+- `newterm` para abrir un nuevo terminal con `C-S-Enter`
+- Utiliza la fuente **Ubuntu Mono** por defecto
 
 <a name="emoji"></a>
-## Nota pels emojis
-El programari pot sortir inesperadament al inserir emojis. Per això és recomanable fer el següent:
-- Instal·lar una font d'emojis (`noto-fonts-emoji` a l'AUR, per exemple)
-- Tenir instal·lat `libxft-bgra` (és disponible a l'AUR, suprimir `libxft` en cas de conflictes)
+## Nota por los emojis
+El software puede salir inesperadamente al insertar emojis. Por eso es recomendable hacer lo siguiente:
+- Instalar una fuente de emojis (`noto-fonts-emoji` a la AUR, por ejemplo)
+- Tener instalado `libxft-bgra` (está disponible a la AUR, suprimir `libxft` en caso de conflictos)
 
 <a name="make"></a>
-## Instal·lació i configuració
-Es pot instalar clonant el repositori i compilant el codi font:
+## Instalación y configuración
+Se puede instalar clonando el repositorio y compilando el código fuente:
 ```bash
 git clone https://github.com/gerardet46/st
 cd st
 sudo make install clean
 ```
-Per configurar-lo es pot editar el fitxer `config.h`, que és on es desen les configuracions del terminal per després compilar-les.
+Para configurarlo se puede editar el fichero `config.h`, que es donde se guardan las configuraciones del terminal para después compilarlas.
 
-Per més personalització, es poden afegir pedaços i/o editar directament el codi font
+Por más personalización, se pueden añadir parches o editar directamente el código fuente
+
