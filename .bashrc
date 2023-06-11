@@ -96,11 +96,11 @@ source "$OSH"/oh-my-bash.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+#if [[ -n $SSH_CONNECTION ]]; then
+#xport EDITOR=vim
+ #else
+  # export EDITOR='mvim'
+ #fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -116,5 +116,5 @@ source "$OSH"/oh-my-bash.sh
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
-neofetch
 
+export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
