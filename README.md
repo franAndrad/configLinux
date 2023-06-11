@@ -23,6 +23,14 @@
 
 `$ sudo pacman -Syu feh`
 
+### 📘 Simple Terminal [st](https://st.suckless.org/)
+
+`$ cd ~/st `
+
+compilamos la terminal
+
+`$ sudo make install clean`
+
 ## 📥 Instalacion configuracion
 
 Para poder utilizar estos packetes debemos reemplazar los archivos dentro de su directorio home:
